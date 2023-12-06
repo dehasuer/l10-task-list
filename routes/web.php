@@ -66,4 +66,4 @@ Route::delete('/tasks/{task}' , function (Task $task) {
 
    return redirect()->route('tasks.index')
        ->with('success' , 'Task deleted successfully');
-})->name('tasks.destroy');  //delete
+})->name('tasks.destroy');
